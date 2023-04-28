@@ -7,21 +7,33 @@
     <link rel="stylesheet" href="./Assets/style.css">
     <title> Sort and Stream</title>
 </head>
+<!-- Body -->
 <body>
     <header>
         <h1>Use sort and stream to find something to watch quickly!</h1>
     </header>
+<!-- Main -->
 <main>
+<!-- Div-->
 <div>
     <h2>What Genre?</h2>
     <button></button>
     <!--gather genres and input in button(s) above-->
 </div>
+
+<!-- Div-->
 <div>
-    <h2>Who will you be watching with?</h2>
-    <button></button>
-    <!--choices like bf,gf,mom,dad,dog,cat -->
+    <h2 for="audience">Who will you be watching the movie with?</h2>
+    <select id="audience">
+        <option value="G">Children (G - General Audiences)</option>
+        <option value="PG">Younger Children ( PG - Parental Guidance Suggested)</option>
+        <option value="PG-13">Teens Age 13 - 17 (PG-13 - Parents Strongly Cautioned)</option>
+        <option value="R">Young Adults At Least Age 17 (R - Restricted)</option>
+        <option value="NC-17">Young Adults and Above (NC-17 - No One 17 and Under)</option>
+    </select>
+
 </div>
+
 <h2 for="duration">How long do you want the movie to be?</h2>
 			<select id="duration">
 				<option value="">Select duration</option>
@@ -29,11 +41,16 @@
 				<option value="medium">Between 90 and 120 minutes</option>
 				<option value="long">More than 120 minutes</option>
 			</select>
+
 <div>
     <h2>Movies</h2>
     <!--this will be the output for our api searches-->
 </div>
+
 </main>
+
+<!-- JavaScript link provided below -->
  <script src="./Assets/script.js"></script>
+
 </body>
 </html>
