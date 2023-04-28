@@ -1,6 +1,6 @@
 var genres = [];
 var watchers ="";
-var movLength ="";
+var movLength = getElementbyId("duration");
 
 
 //Genres
@@ -14,10 +14,18 @@ var movLength ="";
 
 
 
-//Movie Lenght
-//idk 
+//Movie Length  
 
 
+/*function findMovie() {
+    
+
+
+}
+
+
+*/
 
 //Output 
 // create a place holder 
+
