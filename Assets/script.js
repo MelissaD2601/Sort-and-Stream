@@ -1,3 +1,8 @@
+
+
+
+var OMDbAPIKey = "http://www.omdbapi.com/?i=tt3896198&apikey=4145ebcc";
+
 var genres = [];
 var watchers ="";
 var movLength ="";
@@ -21,3 +26,4 @@ var movLength ="";
 
 //Output 
 // create a place holder 
+
