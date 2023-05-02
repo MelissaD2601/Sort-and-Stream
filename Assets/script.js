@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+
+=======
+>>>>>>> 428eb734fa0912bce1c501287ddf756fa2ce1609
 const apiKey = 'Pn0bGCMnOet93HqybkUqUn0OYK12nKEUnQbrQBeP';
 
 // Function to fetch movies data from the API
@@ -18,6 +22,10 @@ function renderMovies(movies) {
 fetchMovies()
   .then(movies => renderMovies(movies))
   .catch(error => console.error(error));
+<<<<<<< HEAD
+
+=======
+>>>>>>> 428eb734fa0912bce1c501287ddf756fa2ce1609
 
 
 
@@ -26,6 +34,8 @@ var OMDbAPIKey = "http://www.omdbapi.com/?i=tt3896198&apikey=4145ebcc";
 var genres = [];
 var watchers ="";
 var movLength = getElementbyId("duration");
+
+//note
 
 
 //Genres
