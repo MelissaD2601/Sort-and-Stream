@@ -1,66 +1,28 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> 428eb734fa0912bce1c501287ddf756fa2ce1609
-const apiKey = 'Pn0bGCMnOet93HqybkUqUn0OYK12nKEUnQbrQBeP';
+var OMDbAPIKey = "apikey=4145ebcc";
+var searchForm = document.getElementById("search-form");
+var searchInput = document.getElementById("search-input");
+var movieTitle = document.getElementById("movie-title");
+var moviePlot = document.getElementById("movie-plot");
+var movieSummary = document.getElementById("movie-summary");
 
-// Function to fetch movies data from the API
-async function fetchMovies() {
-  const response = await fetch(apiKey);
-  const movies = await response.json();
-  return movies;
-}
+var fetchMovieData = function(searchTerm) {
+  var OMDbAPIUrl = `http://www.omdbapi.com/?${OMDbAPIKey}&t=${searchTerm}`;
+  fetch(OMDbAPIUrl)
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      movieTitle.innerText = data.Title;
+      moviePlot.innerText = data.Plot;
+      movieSummary.innerText = data.Actors;
+    })
+    .catch(error => console.error(error));
+};
 
-// Function to render the movie list on the webpage
-function renderMovies(movies) {
-  const movieListEl = document.getElementById('movie-list');
-  const movieListMarkup = movies.map(movie => "movie").join('');
-  movieListEl.innerHTML = movieListMarkup;
-}
+var handleSearchSubmit = function(event) {
+  event.preventDefault();
+  var searchTerm = searchInput.value;
+  fetchMovieData(searchTerm);
+};
 
-// Fetch movies data from the API and render them on the webpage
-fetchMovies()
-  .then(movies => renderMovies(movies))
-  .catch(error => console.error(error));
-<<<<<<< HEAD
-
-=======
->>>>>>> 428eb734fa0912bce1c501287ddf756fa2ce1609
-
-
-
-var OMDbAPIKey = "http://www.omdbapi.com/?i=tt3896198&apikey=4145ebcc";
-
-var genres = [];
-var watchers ="";
-var movLength = getElementbyId("duration");
-
-//note
-
-
-//Genres
-// think about having a dropdown for the or click-box
-
-
-
-
-//Watchers
-//think about how you want the user to make the choices 
-
-
-
-//Movie Length  
-
-
-/*function findMovie() {
-    
-
-
-}
-
-
-*/
-
-//Output 
-// create a place holder 
-
+searchForm.addEventListener("submit", handleSearchSubmit);
