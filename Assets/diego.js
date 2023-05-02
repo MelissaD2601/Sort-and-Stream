@@ -1,35 +1,28 @@
 
-var OMDbAPIKey = "401e702d";
-var watchModeKey = "OWgFxlMXkfOZpNjz00xvjEQCAU2PrQe8w24zUZCE"
-var genres = getElementbyId("genres");
-var audience =getElementbyId("audience");
-var movLength = getElementbyId("duration");
-var omdbURL= "http://www.omdbapi.com/?";//imdbd id, imdbrating, rottentomatoes ratings, audience ratings,
-var watchURL = "https://api.watchmode.com/v1/sources/?apiKey="
+var OMDbAPIKey = "apikey=4145ebcc";
+var searchForm = document.getElementById("search-form");
+var searchInput = document.getElementById("search-input");
+var movieTitle = document.getElementById("movie-title");
+var moviePlot = document.getElementById("movie-plot");
+var movieSummary = document.getElementById("movie-summary");
 
-//Genres
-// think about having a dropdown for the or click-box
+var fetchMovieData = function(searchTerm) {
+  var OMDbAPIUrl = `http://www.omdbapi.com/?${OMDbAPIKey}&t=${searchTerm}`;
+  fetch(OMDbAPIUrl)
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      movieTitle.innerText = data.Title;
+      moviePlot.innerText = data.Plot;
+      movieSummary.innerText = data.Actors;
+    })
+    .catch(error => console.error(error));
+};
 
+var handleSearchSubmit = function(event) {
+  event.preventDefault();
+  var searchTerm = searchInput.value;
+  fetchMovieData(searchTerm);
+};
 
-
-
-//Watchers
-//think about how you want the user to make the choices 
-
-
-
-//Movie Length  
-
-
-/*function findMovie() {
-    
-
-
-}
-
-
-*/
-
-//Output 
-// create a place holder 
-
+searchForm.addEventListener("submit", handleSearchSubmit);
