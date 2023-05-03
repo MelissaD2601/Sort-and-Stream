@@ -1,47 +1,49 @@
 <!DOCTYPE html>
-<html>
-  <!-- Head -->
+<html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search & Stream</title>
+    <link rel="stylesheet" href="./Assets/style.css">
 
-    <!-- Link for Google Fonts provided below -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-    <!-- Link to the style.css file provided below. -->
-    <link rel="stylesheet" href="Assets/style.css" />
-
-    <title>Movie Search</title>
   </head>
   
   <body>
-    <!-- Header -->
-    <header>
-      <h1>Movie Search</h1>
-    </header>
+    
+    <div class="container">
 
-    <!-- Form providing the search field to the user provided below. -->
-    <form id="search-form">
-      <label for="search-input">Search for a movie: </label>
-      <input type="text" id="title-input" name="search" placeholder="Enter movie title...">
-      <button type="submit" id="search-button">Search</button>
-    </form>
-    <div class="results">
-      <p>Here is the movie you searched for! : </p>
-      <div id="search-results">
 
-      <div id="movie-info">
-        <img id="movie-poster" src="" alt=""></h2>
-        <h2 id="movie-title"></h2>
-        <h2 id="imdbID"></h2>
-        <p id="movie-plot"></p>
-        <p id="movie-summary"></p>
-        <a id="streaming-link"href=""></a>
+      <div class="header">
+        <h1> Search and Stream</h1>
       </div>
+
+      <div class="search">
+        <form id="search-form">
+          <label for="search-input">Search for a movie:</label>
+          <input type="text" id="search-input" name="search" placeholder="Enter movie title...">
+          <button type="submit">Search</button>
+        </form>
+          <div id="search-results">
+          <div id="movie-info">
+            <h2 id="movie-title"></h2>
+            <p id="movie-plot"></p>
+            <p id="movie-summary"></p>
+          </div>
+        </div>
+    
+        <script src="./Assets/diego.js"></script>
+      </div>
+
+      <div class="output">
+        <p>Here is your movie! : </p>
+      </div>
+
+      <div class="footer">
+        <h4> thanks for searching and happy streaming</h4>
       </div>
     </div>
-    <script src="./Assets/diego.js"></script>
+    
   </body>
- 
+
 </html>
 
