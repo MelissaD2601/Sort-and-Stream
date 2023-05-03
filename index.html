@@ -1,28 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Movie Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search & Stream</title>
+    <link rel="stylesheet" href="./Assets/style.css">
+
   </head>
   
   <body>
-    <h1>Movie Search</h1>
-    <form id="search-form">
-      <label for="search-input">Search for a movie:</label>
-      <input type="text" id="search-input" name="search" placeholder="Enter movie title...">
-      <button type="submit">Search</button>
-    </form>
-      <div id="search-results">
-      <div id="movie-info">
-        <h2 id="movie-title"></h2>
-        <p id="movie-plot"></p>
-        <p id="movie-summary"></p>
+    
+    <div class="container">
+
+
+      <div class="header">
+        <h1> Search and Stream</h1>
+      </div>
+
+      <div class="search">
+        <form id="search-form">
+          <label for="search-input">Search for a movie:</label>
+          <input type="text" id="search-input" name="search" placeholder="Enter movie title...">
+          <button type="submit">Search</button>
+        </form>
+          <div id="search-results">
+          <div id="movie-info">
+            <h2 id="movie-title"></h2>
+            <p id="movie-plot"></p>
+            <p id="movie-summary"></p>
+          </div>
+        </div>
+    
+        <script src="./Assets/diego.js"></script>
+      </div>
+
+      <div class="output">
+        <p>Here is your movie! : </p>
+      </div>
+
+      <div class="footer">
+        <h4> thanks for searching and happy streaming</h4>
       </div>
     </div>
-    <script src="./Assets/diego.js"></script>
+   
+    
   </body>
-  <div class="results">
-    <p>Here is the movie you searched for! : </p>
-  </div>
 </html>
 
