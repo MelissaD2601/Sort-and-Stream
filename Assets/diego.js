@@ -1,6 +1,6 @@
 
 var OMDbAPIKey = "apikey=4145ebcc";
-var watchModeKey = "apikey=OWgFxlMXkfOZpNjz00xvjEQCAU2PrQe8w24zUZCE"
+var watchModeKey = "apiKey=OWgFxlMXkfOZpNjz00xvjEQCAU2PrQe8w24zUZCE"
 var searchForm = document.getElementById("search-form");
 var searchInput = document.getElementById("search-input");
 var movieTitle = document.getElementById("movie-title");
@@ -28,7 +28,7 @@ var fetchMovieData = function(searchTerm) {
 };
 
 
-var fetchStreamingSites = function(movieId){
+/*var fetchStreamingSites = function(movieId){
     var watchModeURL = `https://api.watchmode.com/v1/title/${movieId}/sources/?${watchModeKey}`;
     fetch(watchModeURL)
     .then(response => response.json())
@@ -39,14 +39,14 @@ var fetchStreamingSites = function(movieId){
     })
     .catch(error => console.error(error));
 }
-
+*/
 var handleSearchSubmit = function(event) {
   event.preventDefault();
   // this variable what the user inputs into the search and returns its value
   var searchTerm = searchInput.value;
-  var movieId = imdbNumber.value;
+  //var movieId = imdbNumber.value;
   fetchMovieData(searchTerm);
-  fetchStreamingSites(movieId);
+  //fetchStreamingSites(movieId);
 };
 
 searchForm.addEventListener("submit", handleSearchSubmit);
