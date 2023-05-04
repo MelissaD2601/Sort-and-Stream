@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    border: 5px solid black;
+    background-color: rgb(147, 3, 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header {
+    width: 700px;
+    height: 100px;
+    background:rgb(147, 3, 3);
+    font-family: "Cormorant Garamond";
+    font-size: x-large;
+    text-align: center;
+    
+    
+}
+
+
+.footer {
+    width: 700px;
+    height: 50px;
+    background: rgb(147, 3, 3);
+    font-family: 'vina sans';
+    font-size: medium;
+    text-align: center;
+  
+}
+
+
+@media only screen and (max-width: 780px) {
+    .container {
+    
+    background: #2F4858;
+    }
+}
