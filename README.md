@@ -15,7 +15,7 @@ The "Sort and Stream" webpage was created to help users know where they are able
 
 This project was designed to help boot camp students understand the dynamics of working as a team on a group project. The project also serves to help boot camp students apply their knowledge about HTML, Cascading Style Sheets (CSS), JavaScript, server-side API's, and GitHub to the project, in a manner which creates a working webpage.
 
-While completing this project we learned how to utilize URLs in JavaScript in a faster and more efficient way. We also learned the importance of understanding the requirements of a project, while making sure each requirement was addressed with each task which was completed.
+While completing this project we learned how to utilize URLs in JavaScript in a faster and more efficient way. We also learned the importance of understanding the requirements of a project, while making sure each requirement was addressed with each task that was completed.
 
 ## Installation
 
@@ -29,12 +29,13 @@ To use this webpage, please enter a movie title in to the input field which indi
 
 ![alt text](/Assets/images/README-Usage-Guide-Search-Fields.PNG)
 
-After the search results populate, please select the name of the streaming app provided in blue text located toward the bottom of the page to be redirected to that streaming platform's webpage. Once redirected, viewing options should be made available on that streaming platform's webpage. An example of the streaming app provided in blue text can be seen with a red rectangle around it in the image below.
+After the search results populate, please click the name of the streaming platform which serves as a link, provided in blue text, located toward the bottom of the page to be redirected to that streaming platform's web page. Once redirected, viewing options should be made available on that streaming platform's web page. An example of the streaming platform which serves as a link can be seen with a red rectangle around it in the image below.
 
 ![alt text](/Assets/images/README-Usage-Guide-Streaming-App.PNG)
 
 ## Credits
 
+Eunice Damaris, Melissa Dorna, Diego Ruiz, and Joey Sanchez worked together as a group to complete this project.
 
 ## License
 
@@ -42,3 +43,4 @@ Please refer to the MIT License in the Sort and Stream repository.
 
 ## Features
 
+The “Sort and Stream” web page allows users to input movie titles of their choice in to the "Enter movie title..." input field and returns search results which provide a brief summary of the movie, an eye catching movie poster, and resources which help users know where they are able to watch the movie.
