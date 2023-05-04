@@ -1,4 +1,6 @@
+
 var searchButton = document.getElementById("search-button");
+
 
 //The API key for OMDb provided below.
 var OMDbAPIKey = "4145ebcc";
@@ -9,6 +11,7 @@ var OMDbAPIKey = "4145ebcc";
 
 var watchMovie = function(event) {
     event.preventDefault();
+    
     var movieTitle = getElementById("title-input").value;
     //The OMDb API URL provided below.
     var OMDbAPIUrl = "http://www.omdbapi.com/?" + movieTitle + "apikey=" + OMDbAPIKey;
@@ -35,3 +38,4 @@ var watchMovie = function(event) {
 }
 
 searchButton.addEventListener("click", watchMovie);
+
