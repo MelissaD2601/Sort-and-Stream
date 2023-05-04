@@ -29,7 +29,7 @@ To use this webpage, please enter a movie title in to the input field which indi
 
 ![alt text](/**Add image here**)
 
-After the search results populate, please select the blue link located toward the bottom of the page to be redirected to that streaming platforms webpage. Once redirected, viewing options should be made available on that streaming platforms webpage. An example of the blue link can be seen with a yellow rectangle around it in the image below.
+After the search results populate, please select the blue link located toward the bottom of the page to be redirected to that streaming platform's webpage. Once redirected, viewing options should be made available on that streaming platform's webpage. An example of the blue link can be seen with a yellow rectangle around it in the image below.
 
 ![alt text](/**Add image here**)
 
