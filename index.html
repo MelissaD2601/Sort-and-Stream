@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search & Stream</title>
-    <link rel="stylesheet" href="./Assets/style.css">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Search & streaming</title>
 
-  </head>
-  
-  <body>
-    
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="Assets/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="materialize-red darken-4" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Search and Stream</a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
     <div class="container">
-
-
+      <br><br>
+      <h1 class="header center red-text">Search for a movie</h1>
+      
+      <div class="row center">
       <div class="header">
         <h1> Search and Stream</h1>
       </div>
 <!-- Search Form and submit button-->
+
         <form id="search-form">
-          <label for="search-input">Search for a movie:</label>
+          <label for="search-input"></label>
           <input type="text" id="search-input" name="search" placeholder="Enter movie title...">
           <button type="submit">Search</button>
         </form>
@@ -35,18 +43,21 @@
             </a>
           </div>
         </div>
-    
-<div>
-       <p>Here is your movie! : </p>
-      </div>
 
-      <div class="footer">
-        <h4> Thanks for searching and happy streaming</h4>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
       </div>
     </div>
-    <!--Links Js File-->
-    <script src="./Assets/script.js"></script>
+  </footer>
+
+
+
+  <!--  Scripts-->
+  <script src="./Assets/script.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
   </body>
-
 </html>
-
