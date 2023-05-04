@@ -9,9 +9,9 @@ So that I know where I am able to stream the movie
 
 ## Description
 
-The “Sort and Stream” web page allows users to search for movies by title. The application reduces the amount of time users spend trying to find a location to stream a movie from.The application is simple to use, and helps users in a short amount of time.
+The “Sort and Stream” web page allows users to search for movies by title. The application reduces the amount of time users spend trying to find a location to stream a movie from. The application is simple to use, and helps users in a short amount of time.
 
-The "Sort and Stream" webpage was created to help users know where they are able to watch movies. Users are able to search for the movie of their choice, by title, and once the search is complete, users are provided with a brief summary of the movie, an eye catching movie poster, and resources which help users know where they are able to watch the movie.
+The "Sort and Stream" webpage was created to help users know where they are able to watch movies. Users are able to search for the movie of their choice, by title, and once the search is complete, users are provided with a brief summary of the movie, an eye-catching movie poster, and resources which help users know where they are able to watch the movie.
 
 This project was designed to help boot camp students understand the dynamics of working as a team on a group project. The project also serves to help boot camp students apply their knowledge about HTML, Cascading Style Sheets (CSS), JavaScript, server-side API's, and GitHub to the project, in a manner which creates a working webpage.
 
@@ -43,4 +43,4 @@ Please refer to the MIT License in the Sort and Stream repository.
 
 ## Features
 
-The “Sort and Stream” web page allows users to input movie titles of their choice in to the "Enter movie title..." input field and returns search results which provide a brief summary of the movie, an eye catching movie poster, and resources which help users know where they are able to watch the movie.
+The “Sort and Stream” web page allows users to input movie titles of their choice in to the "Enter movie title..." input field and returns search results which provide a brief summary of the movie, an eye-catching movie poster, and resources which help users know where they are able to watch the movie.
