@@ -17,7 +17,7 @@ var streamingTitle = document.getElementById("streaming-title")
 
 //following function fetches a movie based on what the user inputs into the search input value
 var fetchMovieData = function(searchTerm) {
-  var OMDbAPIUrl = `http://www.omdbapi.com/?${OMDbAPIKey}&t=${searchTerm}`;
+  var OMDbAPIUrl = `https://www.omdbapi.com/?${OMDbAPIKey}&t=${searchTerm}`;
   fetch(OMDbAPIUrl)
     .then(response => response.json())
     .then(data => {
