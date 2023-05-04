@@ -25,13 +25,13 @@ To view the "Sort and Stream" webpage, please copy the URL provided below and pa
 
 ## Usage
 
-To use this webpage, please enter a movie title in to the input field which indicates, "Enter movie title..." Once the movie title has been entered in to the input field, please select the "Search" button located to the right of the "Enter movie title..." input field. The "Enter movie title..." input field, and the "Search" button can be seen with yellow rectangles around them in the image below.
+To use this webpage, please enter a movie title in to the input field which indicates, "Enter movie title..." Once the movie title has been entered in to the input field, please select the gray "Search" button located underneath the "Enter movie title..." input field. The "Enter movie title..." input field, and the "Search" button can be seen with red rectangles around them in the image below.
 
-![alt text](/**Add image here**)
+![alt text](/Assets/images/README-Usage-Guide-Search-Fields.PNG)
 
-After the search results populate, please select the blue link located toward the bottom of the page to be redirected to that streaming platform's webpage. Once redirected, viewing options should be made available on that streaming platform's webpage. An example of the blue link can be seen with a yellow rectangle around it in the image below.
+After the search results populate, please select the name of the streaming app provided in blue text located toward the bottom of the page to be redirected to that streaming platform's webpage. Once redirected, viewing options should be made available on that streaming platform's webpage. An example of the streaming app provided in blue text can be seen with a red rectangle around it in the image below.
 
-![alt text](/**Add image here**)
+![alt text](/Assets/images/README-Usage-Guide-Streaming-App.PNG)
 
 ## Credits
 
