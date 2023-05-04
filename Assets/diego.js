@@ -9,7 +9,7 @@ var movieSummary = document.getElementById("movie-summary");
 var moviePoster = document.getElementById("movie-poster");
 var imdbNumber = document.getElementById("imdbID")
 var streamingLink = document.getElementById("streaming-link")
-
+var streamingTitle = document.getElementById("streaming-title")
 
 //following function fetches a movie based on what the user inputs into the search input value
 var fetchMovieData = function(searchTerm) {
@@ -23,30 +23,29 @@ var fetchMovieData = function(searchTerm) {
       movieSummary.innerText = data.Actors;
       moviePoster.src = data.Poster;
       imdbNumber.innerText = data.imdbID;
+      fetchStreamingSites(data.imdbID);
     })
     .catch(error => console.error(error));
 };
 
 
-/*var fetchStreamingSites = function(movieId){
+var fetchStreamingSites = function(movieId){
     var watchModeURL = `https://api.watchmode.com/v1/title/${movieId}/sources/?${watchModeKey}`;
     fetch(watchModeURL)
     .then(response => response.json())
     .then(data => {
-        console.log(data);
-        streamingLink.href = data.web_url;
-
+        console.log(data[0]);
+        streamingLink.href = data[0].web_url;
+        streamingTitle.innerText = data[0].name;
     })
     .catch(error => console.error(error));
 }
-*/
+
 var handleSearchSubmit = function(event) {
   event.preventDefault();
   // this variable what the user inputs into the search and returns its value
   var searchTerm = searchInput.value;
-  //var movieId = imdbNumber.value;
   fetchMovieData(searchTerm);
-  //fetchStreamingSites(movieId);
 };
 
 searchForm.addEventListener("submit", handleSearchSubmit);
