@@ -16,21 +16,22 @@
       <div class="header">
         <h1> Search and Stream</h1>
       </div>
-
+<!-- Search Form and submit button-->
         <form id="search-form">
           <label for="search-input">Search for a movie:</label>
           <input type="text" id="search-input" name="search" placeholder="Enter movie title...">
           <button type="submit">Search</button>
         </form>
+        <!-- Following divs are used to display movie information-->
           <div id="search-results">
           <div id="movie-info">
           <img id="movie-poster"src="" alt="">
             <h2 id="movie-title"></h2>
-            <h2 id="imdbID"></h2>
+            <h2 hidden id="imdbID"></h2>
             <p id="movie-plot"></p>
             <p id="movie-summary"></p>
             <a  id="streaming-link" href="">
-              <h3 id="streaming-title"></h3>
+              <h2 id="streaming-title"></h2> 
             </a>
           </div>
         </div>
@@ -40,10 +41,11 @@
       </div>
 
       <div class="footer">
-        <h4> thanks for searching and happy streaming</h4>
+        <h4> Thanks for searching and happy streaming</h4>
       </div>
     </div>
-    <script src="./Assets/diego.js"></script>
+    <!--Links Js File-->
+    <script src="./Assets/script.js"></script>
   </body>
 
 </html>
