@@ -18,21 +18,28 @@
     <div class="container">
       <br><br>
       <h1 class="header center red-text">Search for a movie</h1>
+      
       <div class="row center">
+      <div class="header">
+        <h1> Search and Stream</h1>
+      </div>
+<!-- Search Form and submit button-->
+
         <form id="search-form">
           <label for="search-input"></label>
           <input type="text" id="search-input" name="search" placeholder="Enter movie title...">
           <button type="submit">Search</button>
         </form>
+        <!-- Following divs are used to display movie information-->
           <div id="search-results">
           <div id="movie-info">
           <img id="movie-poster"src="" alt="">
             <h2 id="movie-title"></h2>
-            <h2 id="imdbID"></h2>
+            <h2 hidden id="imdbID"></h2>
             <p id="movie-plot"></p>
             <p id="movie-summary"></p>
             <a  id="streaming-link" href="">
-              <h3 id="streaming-title"></h3>
+              <h2 id="streaming-title"></h2> 
             </a>
           </div>
         </div>
@@ -45,7 +52,9 @@
   </footer>
 
 
+
   <!--  Scripts-->
+  <script src="./Assets/script.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
