@@ -3,9 +3,9 @@ The “Sort and Stream” webpage is designed to help users answer the question,
 
 ## User Story
 
-As a movie watcher
-I want to search for a movie by title
-So that I know where I am able to stream the movie
+As a movie watcher<br />
+I want to search for a movie by title<br />
+So that I know where I am able to stream the movie<br />
 
 ## Description
 
